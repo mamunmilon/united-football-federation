@@ -1,0 +1,167 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------- navigation and banner section -----------*/
+
+header{
+    background-color: darkblue;
+    padding: 30px;
+   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------- all button css teg ---------*/
+a{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: darkblue;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 #abbede;
+   
+}
+ a:hover{
+    background-color: #c5f0e8;
+    color:black;
+}
+ 
+
+/*-------- button css end ---------*/
+
+.banner{
+    display:flex;
+    align-items: center;
+    margin: 100px 0 100px 100px;  
+}
+.banner-heading h1{
+    font-size: 40px;
+    color:white;  
+}
+
+.banner-heading{
+    width: 50%;
+    padding-right: 20px;
+}
+ 
+.banner-heading img{
+    width: 80%;
+    
+}
+
+/*------- player portfolio section-- start------ */
+.top-players{
+   
+    padding: 40px;
+    margin: 70px 180px 0 180px;
+    
+}
+.players{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px; 
+   
+}
+
+.player {
+       display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+       width:310px;
+       height: 475px;
+       padding: 15px;
+       background: #FFFFFF;
+       box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+.player h2{
+    font-weight: 30px;
+    margin:5px;
+}
+ .player img{
+    width: 310px;
+    height: 250px;
+}
+/*-------portfolio section end---------- */
+
+.highlights{
+    display: flex;
+    width: 100%;
+    margin: 30px 20px 20px 40px;
+    align-items: center;
+   
+}
+
+.highlights img{
+    width: 80%;
+}
+
+/* champion team photo gallery */
+.photo-galary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-fram {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    position: relative;
+    margin: 20px;
+    overflow: hidden;
+
+}
+
+.photo img {
+    width: 300px;
+    height: 300px;
+
+}
+
+.contant {
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 300px;
+    height: 300px;
+}
+
+.photo-fram:hover .contant {
+    display: block;
+    background-color: rgba(127, 255, 212, 0.603);
+}
+
+.photo-fram:hover .photo {
+    transform: scale(1.5);
+    transition: transform 1.5s ease;
+}
+/*----------- photo gallary close-------- */
+/* footer section */
+
+.the-end{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.the-end img{
+    width: 70%;
+}
+/* footer close */
