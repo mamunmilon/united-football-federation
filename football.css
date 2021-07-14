@@ -21,6 +21,29 @@ nav{
 }
 
 /*------- all button css teg ---------*/
+
+
+.banner{
+    display:flex;
+    align-items: center;
+    margin: 100px 0 100px 100px;  
+}
+.banner-heading h1{
+    font-size: 40px;
+    color:white;  
+}
+
+.banner-heading{
+    width: 50%;
+    padding-right: 20px;
+}
+ 
+.banner-heading img{
+    width: 80%;
+    transform: scale(1);
+    transition: transform 3s ease-out;
+    
+}
 a{
     color: white;
     font-size: 16px;
@@ -41,26 +64,6 @@ a{
  
 
 /*-------- button css end ---------*/
-
-.banner{
-    display:flex;
-    align-items: center;
-    margin: 100px 0 100px 100px;  
-}
-.banner-heading h1{
-    font-size: 40px;
-    color:white;  
-}
-
-.banner-heading{
-    width: 50%;
-    padding-right: 20px;
-}
- 
-.banner-heading img{
-    width: 80%;
-    
-}
 
 /*------- player portfolio section-- start------ */
 .top-players{
@@ -165,3 +168,44 @@ a{
     width: 70%;
 }
 /* footer close */
+ /* Media queries */
+ @media only screen and (max-width:688px) {
+    
+    
+    .banner{
+         display: flex;
+        
+         margin: 0;
+         padding: 0;
+        }
+        
+        
+        .players{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            margin: 0;
+            padding: 0;
+        }  
+        
+         
+ }
+ @media only screen and (min-width: 688px) and (max-width:992px){
+
+    .banner{
+        display: flex;
+        margin: 0;
+        padding: 0;
+       }
+       .top-players{
+           margin: 0;
+           padding: 0;
+       }
+       .players{
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           margin: 0;
+           padding: 0;
+       }  
+ }
